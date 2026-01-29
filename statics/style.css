@@ -4,33 +4,34 @@ html, body, [class*="css"] {
     }
 
 .stApp {
-        background-color: #99D8B9;
+        background-color: #DCDCDC;
     }
 
-div[data-testid="stTextInput"] input {
+/* div[data-testid="stTextInput"] input {
     font-size: 1.6rem;
     font-weight:500;
     vertical-align: middle !important;
     padding-left: 20px;
     height: 40px;
-}
+} */
 
-label[data-testid="stWidgetLabel"] {
+/* label[data-testid="stWidgetLabel"] {
     font-size: 26px !important;
     line-height: 40px !important;
     max-height: 40px !important;
     white-space: normal !important;
     color: mediumblue;
-}
+} */
 
-.stButton > button {
+/* .stButton > button {
     border-radius: 12px;
     position: relative;
     left: 5rem;
-}
+} */
 
 .st-emotion-cache-3qzj0x {
-    font-size: 34px !important;
+    font-size: 28px !important;
+    font-weight:500;
 }
 
 /* selectbox 主顯示區文字 */
@@ -41,8 +42,47 @@ div[data-baseweb="select"] > div {
 
 /* date_input 主輸入框文字 */
 div[data-testid="stDateInput"] input {
-    font-size: 30px !important;
+    font-size: 28px !important;
     font-weight:500 !important;
     /* height: 48px !important;
     line-height: 48px !important; */
+}
+
+/* 修改 Tab 標籤的字體大小 */
+.stTabs [data-baseweb="tab"] p {
+    font-size: 44px;  /* 你可以調整成需要的大小 */
+    font-weight: bold; /* 可選：加粗 */
+    color: navy;
+}
+
+/* 修改選中狀態下的顏色 (可選) */
+.stTabs [aria-selected="true"] p {
+    color: crimson;
+}
+
+/* 讓 number_input 的容器變成水平排列 */
+div[data-testid="stNumberInput"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* 調整標籤與輸入框之間的間距 */
+div[data-testid="stNumberInput"] label {
+    max-width: 150px;
+    margin-right: 15px;
+    margin-bottom: 0; /* 消除預設的下方間距 */
+    white-space: nowrap; /* 防止文字換行 */
+}
+/* 強制控制輸入框區域的寬度 */
+div[data-testid="stNumberInput"] > div {
+    width: 200px !important; /* 你可以在這裡調整寬度 */
+    margin-left: 80px;
+}
+
+/* 1. 讓輸入框內的文字變紅色 */
+div[data-testid="stNumberInput"] input {
+    color: navy !important;
+    font-size: 28px;
+    font-weight: bold;
 }
