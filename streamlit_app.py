@@ -18,5 +18,6 @@ if uploaded_file is None:
 else:
     desktop_path = Path.home() / "Desktop"
     uploaded_desktop = st.file_uploader("📟檔案：", type="xlsx")
-    st.write(f"檔案大小為{uploaded_desktop.size}")
+    if uploaded_desktop is not None:
+        st.write(f"檔案大小為{uploaded_desktop.size}")
     # st.write(f"{pd.read_excel(uploaded_file).shape[0]}")
