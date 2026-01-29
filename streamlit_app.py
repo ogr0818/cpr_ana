@@ -15,7 +15,8 @@ if uploaded_file is None:
                 <h5 style="color:red";>目前檔案為內存樣本</h5>\
                 </div>',
                 unsafe_allow_html=True)
-    st.write(f"{data.columns}")
 else:
-    st.write(f"上傳檔案為{Path.cwd}")
+    desktop_path = Path.home() / "Desktop"
+    uploaded_desktop = st.file_uploader("📟檔案：", type="xlsx")
+    st.write(f"檔案大小為{uploaded_desktop.size}")
     # st.write(f"{pd.read_excel(uploaded_file).shape[0]}")
