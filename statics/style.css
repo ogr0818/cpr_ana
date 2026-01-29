@@ -1,0 +1,48 @@
+html, body, [class*="css"] {
+        background-color: #FFB6C1;
+        font-size: 1.4rem !important;
+    }
+
+.stApp {
+        background-color: #99D8B9;
+    }
+
+div[data-testid="stTextInput"] input {
+    font-size: 1.6rem;
+    font-weight:500;
+    vertical-align: middle !important;
+    padding-left: 20px;
+    height: 40px;
+}
+
+label[data-testid="stWidgetLabel"] {
+    font-size: 26px !important;
+    line-height: 40px !important;
+    max-height: 40px !important;
+    white-space: normal !important;
+    color: mediumblue;
+}
+
+.stButton > button {
+    border-radius: 12px;
+    position: relative;
+    left: 5rem;
+}
+
+.st-emotion-cache-3qzj0x {
+    font-size: 34px !important;
+}
+
+/* selectbox 主顯示區文字 */
+div[data-baseweb="select"] > div {
+    font-size: 28px !important;
+    font-weight:500;
+}
+
+/* date_input 主輸入框文字 */
+div[data-testid="stDateInput"] input {
+    font-size: 30px !important;
+    font-weight:500 !important;
+    /* height: 48px !important;
+    line-height: 48px !important; */
+}
