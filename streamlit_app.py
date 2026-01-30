@@ -85,5 +85,6 @@ with tab2:
     st.divider()
     # path = r"\\192.168.12.213\5630_住院交班\3行政-急救盤\製作急救盤檔案\急救盤歷年用量統整表.xlsx"
     path = desktop_path / "1122.xlsx"
-    v = pd.read_excel(path, engine='openpyxl')
-    st.write(v.shape[0])
+    # v = pd.read_excel(path, engine='openpyxl')
+    # st.write(v.shape[0])
+    st.write(path)
