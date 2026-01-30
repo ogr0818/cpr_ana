@@ -78,7 +78,7 @@ with tab2:
                     unsafe_allow_html=True)
     else:
         desktop_path = Path.home() / "Desktop"
-        uploaded_desktop = st.file_uploader("📟檔案讀取：", type="xlsx")
+        uploaded_desktop = st.file_uploader("📟檔案讀取：", type=["xlsx", "xlsm"])
         if uploaded_desktop is not None:
             st.write(f"檔案大小為{uploaded_desktop.size}")
     #     # st.write(f"{pd.read_excel(uploaded_file).shape[0]}")
