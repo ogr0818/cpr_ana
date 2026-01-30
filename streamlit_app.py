@@ -83,6 +83,6 @@ with tab2:
             st.write(f"檔案大小為{uploaded_desktop.size}")
     #     # st.write(f"{pd.read_excel(uploaded_file).shape[0]}")
     st.divider()
-    path = r"\\192.168.12.213\5630_住院交班\3行政-急救盤\製作急救盤檔案\0-急救盤紀錄、封面、更換紀錄.xlsm"
+    path = r"\\192.168.12.213\5630_住院交班\3行政-急救盤\製作急救盤檔案" / rf"0-急救盤紀錄、封面、更換紀錄.xlsm"
     v = pd.read_excel(path, sheet_name=5, engine='openpyxl')
     st.write(v.iloc[-5:])
