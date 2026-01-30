@@ -69,7 +69,7 @@ with tab2:
     st.title(":blue[急救盤用藥分析]")
     file_path = "./EER.xlsx"    # Path(uploaded_file).name
     
-    uploaded_file = st.file_uploader("需要時上傳檔案：", type="xlsx")
+    uploaded_file = st.file_uploader("需要時上傳檔案：", type=["xlsx", "xlsm"])
     if uploaded_file is None:
         data = pd.read_excel(file_path)
         st.markdown(f'<div style="text-align: center;">\
